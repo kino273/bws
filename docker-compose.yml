@@ -1,7 +1,7 @@
 version: "3"
 services:
   bws:
-    image: kino/bws
+    image: ${IMG}
     hostname: bws1 
     privileged: true
     dns:
