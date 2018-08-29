@@ -1,7 +1,7 @@
 version: "3"
 services:
   bws:
-    image: ofirefox
+    image: kino/bws
     hostname: bws1 
     privileged: true
     dns:
