@@ -1,6 +1,7 @@
-FROM fedora:29
+FROM debian
 
-RUN yum install -y firefox
+RUN apt-get update
+RUN apt-get install -y firefox-esr
 RUN useradd -u 1000 worker
 RUN echo "worker:password" | chpasswd
 
