@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:7.11
 
 RUN apt-get update
 RUN apt-get install -y firefox-esr
