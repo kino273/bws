@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ ! -f /etc/machine-id ]; then
+  dbus-uuidgen > /etc/machine-id
+fi
+
 groupmod -g $gid worker
 usermod -u $uid -g $gid worker
 

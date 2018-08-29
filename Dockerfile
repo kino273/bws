@@ -1,4 +1,4 @@
-FROM fedora:26
+FROM fedora:22
 
 RUN yum install -y firefox
 RUN useradd -u 1000 worker
